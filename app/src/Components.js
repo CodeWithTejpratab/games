@@ -5,7 +5,7 @@ export const AppButton = ({ text, onClick, disabled = false }) => {
   const [hover, setHover] = useState(false);
 
   const AppButtonStyles = {
-    backgroundColor: disabled ? "#6c757d" : hover ? "#7fb3d5" : "#002855", // Grey if disabled, Lighter Blue on hover, Dark Blue by default
+    backgroundColor: disabled ? "#6c757d" : hover ? "#50C878" : "#4F7942", // Grey if disabled, Lighter Blue on hover, Dark Blue by default
     color: "#ffffff", // White
     border: "none",
     padding: "10px 20px",
@@ -46,7 +46,7 @@ export const HintButton = ({ hint, setHardMode }) => {
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
       style={{
-        backgroundColor: showHint ? "#6c757d" : hover ? "#7fb3d5" : "#002855",
+        backgroundColor: showHint ? "#6c757d" : hover ? "#50C878" : "#4F7942",
         color: "#ffffff",
         border: "none",
         padding: "10px 20px",
@@ -59,7 +59,7 @@ export const HintButton = ({ hint, setHardMode }) => {
         marginRight: "4px",
       }}
     >
-      {showHint ? `Today's Hint: ${hint}` : "Show me a hint"}
+      {showHint ? `Today's Hint: ${hint}` : "HINT?"}
     </Button>
   );
 };

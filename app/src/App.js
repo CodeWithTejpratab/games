@@ -14,6 +14,7 @@ import {
 } from "./utils";
 
 import SuperFunky from "./fonts/SuperFunky.ttf";
+import cat from './cat.jpg';
 
 function App() {
   const gameNumber = getGameNumber();
@@ -185,21 +186,37 @@ function App() {
         >
           Save the Coookie Monster
         </h1>
+        <section>
+          <div className="container">
+              {/* Image */}
+              <img src={cat} alt="Placeholder" className="me"/>
+              <p>
+               Whiskey is wanted cat 🐱 all around Cat City for stealing cookies🍪. Because of that he has been given the name Cookie Monster. 
+               The meow corp is hot 🔥on his paws🐾. If he is cought he'll be sentence for life in Meow Pound🚔.
+               <p>
+                <strong>Hurry! 
+                Solve the puzzle 🧩 to save the Cookie Monster!
+                </strong>
+               </p>
+              </p>
+          </div> 
+        </section>
+         
         {!finishedGame ? (
           <>
             {/* Hints */}
             <HintButton hint={hint} setHardMode={setHardMode} />
             {/* Guesses */}
             <h3 style={{ marginBottom: "0px" }}>
-              Guesses{" "}
+              Guess:{" "}
               <span style={{ fontSize: "24px" }}>
                 {attempts.map((attempt) => (attempt ? "✅" : "❌"))}
               </span>
             </h3>
             <div>
               <span style={{ fontSize: "18px" }}>
-                <b>Incorrect guesses:</b> {wordBank.join(", ")}{" "}
-                {wordBank.length === 0 && "None so far, you're a star!⭐"}
+                <b>Poor guess:</b> {wordBank.join(", ")}{" "}
+                {wordBank.length === 0 && "Fresh Start!"}
               </span>
             </div>
             <div style={{ marginBottom: "8px" }}>
@@ -225,10 +242,10 @@ function App() {
                   key={entryId}
                   style={{
                     display: "inline-block",
-                    backgroundColor: entry === "*" ? "transparent" : "beige",
-                    border: entry === "*" ? "1px solid beige" : "none",
-                    width: `${Math.min(window.innerWidth / (largestLength + 3), 50)}px`,
-                    height: `${Math.min(window.innerWidth / (largestLength + 3), 50)}px`,
+                    backgroundColor: entry === "*" ? "transparent" : "#4F7942",
+                    border: entry === "*" ? "2px solid black" : "none",
+                    width: `${Math.min(window.innerWidth / (largestLength + 3), 45)}px`,
+                    height: `${Math.min(window.innerWidth / (largestLength + 3), 45)}px`,
                     alignItems: "center",
                     justifyContent: "center",
                     fontFamily: "Futura, sans-serif",
@@ -236,7 +253,7 @@ function App() {
                     textTransform: "uppercase",
                     margin: "4px",
                     fontSize: "xx-large",
-                    color: entry === "*" ? "transparent" : "black",
+                    color: entry === "*" ? "transparent" : "white",
                   }}
                 >
                   {entry === "*" ? "*" : entry}
@@ -251,7 +268,7 @@ function App() {
                     <div
                       key={entry["id"]}
                       style={{
-                        backgroundColor: "beige",
+                        backgroundColor: "white",
                         width: `50px`,
                         height: `50px`,
                         display: "flex",
@@ -265,9 +282,9 @@ function App() {
                         fontSize: "xx-large",
                         color:
                           entry["value"] === "*"
-                            ? "beige"
+                            ? "white"
                             : selectedLetters.includes(entry["id"])
-                              ? "#bfbfbf" // light grey
+                              ? "#50C878" // light grey
                               : "black",
                       }}
                       onClick={() =>

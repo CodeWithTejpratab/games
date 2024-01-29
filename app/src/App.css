@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container .me{
+  float: left;
+  width: 160px;
+  height: 160px;
+  border-radius: 40px;
+  padding: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,14 +28,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color:#e7e3d5f7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(67, 105, 110);
 }
 
 .App-link {
