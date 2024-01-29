@@ -303,13 +303,13 @@ function App() {
           // Finished board
           <>
             <h3 style={{ marginBottom: "0px" }}>
-              Nice job finishing the game!
+              Looks like you saved the Cookie Monster!
             </h3>
             <p style={{ marginBottom: "0px" }}>
-              Worddicted #{gameNumber}
+              Save-The-Cookie-Monster {gameNumber}
               {hardMode && "*"}{" "}
               <span style={{ fontSize: "24px" }}>
-                {attempts.map((attempt) => (attempt ? "😎" : "👿"))}
+                {attempts.map((attempt) => (attempt ? "✅" : "❌"))}
               </span>
             </p>
             <p style={{ fontSize: "18px" }}>
