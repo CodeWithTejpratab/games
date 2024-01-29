@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/games/static/css/main.f855e6bc.css",
-    "main.js": "/games/static/js/main.7899ea38.js",
+    "main.js": "/games/static/js/main.a661ddd4.js",
     "static/js/787.0f8d78ff.chunk.js": "/games/static/js/787.0f8d78ff.chunk.js",
     "static/media/SuperFunky.ttf": "/games/static/media/SuperFunky.9367084bb0ab79d1947f.ttf",
     "index.html": "/games/index.html",
     "main.f855e6bc.css.map": "/games/static/css/main.f855e6bc.css.map",
-    "main.7899ea38.js.map": "/games/static/js/main.7899ea38.js.map",
+    "main.a661ddd4.js.map": "/games/static/js/main.a661ddd4.js.map",
     "787.0f8d78ff.chunk.js.map": "/games/static/js/787.0f8d78ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.7899ea38.js"
+    "static/js/main.a661ddd4.js"
   ]
 }
