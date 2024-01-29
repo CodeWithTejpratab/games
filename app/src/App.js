@@ -65,12 +65,12 @@ function App() {
   const handleCopyToClipboard = () => {
     if (copyTextRef.current) {
       const hiddenTextArea = document.createElement("textarea");
-      const yaas = "😎";
-      const nooo = "👿";
+      const yaas = "✅";
+      const nooo = "❌";
       const strikes = attempts
         .map((attempt) => (attempt ? yaas : nooo))
         .join("");
-      hiddenTextArea.value = `Worddicted #${gameNumber}${hardMode ? `*` : ""}\n${strikes}\n\nhttps://worddicted.github.io/`;
+      hiddenTextArea.value = `Save the Cookie Monster #${gameNumber}${hardMode ? `*` : ""}\n${strikes}\n\nhttps://codewithtejpratab.github.io/games/`;
       document.body.appendChild(hiddenTextArea);
       hiddenTextArea.select();
       document.execCommand("copy");
@@ -183,7 +183,7 @@ function App() {
             textShadow: "2px 2px 4px #000080",
           }}
         >
-          Worddicted
+          Save the Coookie Monster
         </h1>
         {!finishedGame ? (
           <>
