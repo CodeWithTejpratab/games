@@ -186,24 +186,20 @@ function App() {
         >
           Save the Coookie Monster
         </h1>
-        <section>
-          <div className="container">
+         
+        {!finishedGame ? (
+          <>
+           <div className="container">
               {/* Image */}
               <img src={cat} alt="Placeholder" className="me"/>
               <p>
                Whiskey is wanted cat 🐱 all around Cat City for stealing cookies🍪. Because of that he has been given the name Cookie Monster. 
                The meow corp is hot 🔥on his paws🐾. If he is cought he'll be sentence for life in Meow Pound🚔.
-               <p>
-                <strong>Hurry! 
+                <strong>      Hurry! 
                 Solve the puzzle 🧩 to save the Cookie Monster!
                 </strong>
-               </p>
               </p>
           </div> 
-        </section>
-         
-        {!finishedGame ? (
-          <>
             {/* Hints */}
             <HintButton hint={hint} setHardMode={setHardMode} />
             {/* Guesses */}
