@@ -228,7 +228,7 @@ function App() {
             <div>
               <span style={{ fontSize: "18px" }}>
                 <b>Poor guess:</b> {wordBank.join(", ")}{" "}
-                {wordBank.length === 0 && "Fresh Start!"}
+                {wordBank.length === 0 && "NA"}
               </span>
             </div>
             <div style={{ marginBottom: "8px" }}>
