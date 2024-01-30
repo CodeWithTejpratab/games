@@ -134,7 +134,7 @@ function App() {
 
   const makeGuess = () => {
     const input = userInput.toLowerCase();
-    if (guessCount >= 5) {
+    if (guessCount >= 6) {
       // User has exceeded guess limit
       // You can add further actions here, like showing a message to the user
       return;
@@ -201,7 +201,7 @@ function App() {
     <p>Try again later!</p>
   </div>
 )}
-        {!finishedGame && guessCount < 5 ? (
+        {!finishedGame && guessCount < 6 ? (
           <>
            <div className="container">
               {/* Image */}
@@ -326,9 +326,10 @@ function App() {
               />
             </div>
           </>
-        ) : (
-          // Finished board
-          <>
+        ) : null}
+        {/* Finished board */}
+        {finishedGame && (
+          <div>
             <h3 style={{ marginBottom: "0px" }}>
               Looks like you saved the Cookie Monster!
             </h3>
@@ -350,11 +351,11 @@ function App() {
             <div style={{ display: "none" }}>
               <textarea ref={copyTextRef} readOnly />
             </div>
-          </>
+          </div>
         )}
       </header>
     </div>
   );
-}
-
-export default App;
+  }
+  
+  export default App;
