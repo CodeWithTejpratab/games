@@ -15,7 +15,7 @@ import {
 
 import SuperFunky from "./fonts/SuperFunky.ttf";
 import cat from './cat.jpg';
-
+import jailcat from './jailcat.jpg';
 function App() {
   const gameNumber = getGameNumber();
   let solution;
@@ -194,11 +194,14 @@ function App() {
           Save the Coookie Monster
         </h1>
         
-        {guessCount >= 5 && !finishedGame && (
-  <div>
+        {guessCount >= 6 && !finishedGame && (
+  <div >
     <h2>Game Over!</h2>
     <p>Sorry, you have reached the maximum number of guesses.</p>
     <p>Try again later!</p>
+    <img src={jailcat} alt="jailcat" height= "50%" width= "50%" /> 
+    <p>The Cookie Monster has been sentenced to life in Meow Pound🚔.</p>
+    <p><b>You Have Fail To Save The Cookie Monster!!😔</b></p>
   </div>
 )}
         {!finishedGame && guessCount < 6 ? (
