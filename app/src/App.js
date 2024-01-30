@@ -193,10 +193,10 @@ function App() {
               {/* Image */}
               <img src={cat} alt="Placeholder" className="me"/>
               <p>
-               Whiskey is wanted cat 🐱 all around Cat City for stealing cookies🍪. Because of that he has been given the name Cookie Monster. 
-               The meow corp is hot 🔥on his paws🐾. If he is cought he'll be sentence for life in Meow Pound🚔.
-                <strong>      Hurry! 
-                Solve the puzzle 🧩 to save the Cookie Monster!
+               Whiskey is a wanted cat 🐱 all around Cat City for stealing cookies🍪. Because of that he has been given the name Cookie Monster. 
+               The meow corp is hot 🔥on his paws🐾. If he is caught he'll be sentenced for life in Meow Pound🚔.
+                <strong>     
+                  Hurry! Solve the puzzle 🧩 to save the Cookie Monster!
                 </strong>
               </p>
           </div> 
