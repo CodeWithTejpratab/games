@@ -37,6 +37,7 @@ function App() {
   const [guessBox, setGuessBox] = useState(Array(largestLength).fill("*"));
   const [textCopied, setTextCopied] = useState(false);
   const [selectedLetters, setSelectedLetters] = useState([]);
+  const [guessCount, setGuessCount] = useState(0); // New state variable for guess count
 
   const history = getUserHistoryForToday();
   const [grid, setGrid] = useState(
@@ -133,6 +134,12 @@ function App() {
 
   const makeGuess = () => {
     const input = userInput.toLowerCase();
+    if (guessCount >= 5) {
+      // User has exceeded guess limit
+      // You can add further actions here, like showing a message to the user
+      return;
+    }
+    setGuessCount(guessCount + 1); // Increment guess count
     if (words.includes(input)) {
       // case where the user made a correct guess
       setAttempts([...attempts, true]);
@@ -186,8 +193,15 @@ function App() {
         >
           Save the Coookie Monster
         </h1>
-         
-        {!finishedGame ? (
+        
+        {guessCount >= 5 && !finishedGame && (
+  <div>
+    <h2>Game Over!</h2>
+    <p>Sorry, you have reached the maximum number of guesses.</p>
+    <p>Try again later!</p>
+  </div>
+)}
+        {!finishedGame && guessCount < 5 ? (
           <>
            <div className="container">
               {/* Image */}
