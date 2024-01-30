@@ -5,7 +5,7 @@ export const SOLUTIONS = {
     },
     1: {
       answer: ["rose", "tulip", "daisy", "sunflower"],
-      hint: "Garden fare or Trader Joe's wares.",
+      hint: "Garden fare or wandering trader from Stardew Valley.",
     },
     2: {
       answer: ["Hermione", "Ronald", "Fred", "Minerva"],
