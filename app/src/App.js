@@ -37,7 +37,7 @@ function App() {
   const [guessBox, setGuessBox] = useState(Array(largestLength).fill("*"));
   const [textCopied, setTextCopied] = useState(false);
   const [selectedLetters, setSelectedLetters] = useState([]);
-  const [guessCount, setGuessCount] = useState(0); // New state variable for guess count
+  const [guessCount, setGuessCount] = useState(0);
 
   const history = getUserHistoryForToday();
   const [grid, setGrid] = useState(
@@ -136,7 +136,6 @@ function App() {
     const input = userInput.toLowerCase();
     if (guessCount >= 6) {
       // User has exceeded guess limit
-      // You can add further actions here, like showing a message to the user
       return;
     }
     setGuessCount(guessCount + 1); // Increment guess count

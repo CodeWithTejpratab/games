@@ -8,20 +8,20 @@ export const SOLUTIONS = {
       hint: "Garden fare or Trader Joe's wares.",
     },
     2: {
-      answer: ["maple", "oak", "pine", "birch"],
-      hint: "Familiar friends that help us branch out of city living.",
+      answer: ["Hermione", "Ronald", "Fred", "Minerva"],
+      hint: "Your a wizard Harry!",
     },
     3: {
-      answer: ["java", "python", "javascript", "ruby"],
+      answer: ["rust", "python", "javascript", "assembly"],
       hint: "Languages that power the digital world.",
     },
     4: {
-      answer: ["ocean", "river", "lake", "stream"],
-      hint: "Summer's a good time to enjoy a swim.",
+      answer: ["dolphin", "whale", "shark", "octopus"],
+      hint: "They spend a lot of time exploring the ocean!",
     },
     5: {
-      answer: ["piano", "guitar", "violin", "flute"],
-      hint: "The tools for our universal language (no, not math).",
+      answer: ["cookie", "lizard", "catnip", "turkey"],
+      hint: "The Cookie Monster loves... but also loves...",
     },
     6: {
       answer: ["mountain", "valley", "plateau", "canyon"],
@@ -32,8 +32,8 @@ export const SOLUTIONS = {
       hint: "Genres that play out life's script on the big screen.",
     },
     8: {
-      answer: ["apple", "banana", "orange", "grape"],
-      hint: "These might add a juicy twist to your day.",
+      answer: ["hydrogen", "carbon", "calcium", "oxygen"],
+      hint: "Theyre elemental-ly found in the body…",
     },
     9: {
       answer: ["novel", "poetry", "drama", "mystery"],
@@ -48,8 +48,8 @@ export const SOLUTIONS = {
       hint: "Tools that paint the canvas of creativity.",
     },
     12: {
-      answer: ["bike", "car", "bus", "train"],
-      hint: "Mobility in a bustling city.",
+      answer: ["mergesort", "algorithm", "pointers", "shell"],
+      hint: "Some of the greatest computer scientist can master these.",
     },
     13: {
       answer: ["science", "history", "math", "language"],
@@ -72,8 +72,8 @@ export const SOLUTIONS = {
       hint: "Geographical features that 'shape' landscapes.",
     },
     18: {
-      answer: ["whale", "dolphin", "shark", "jellyfish"],
-      hint: "Creatures that 'roam' the depths of the ocean.",
+      answer: ["heartbreak", "alone", "betrayal", "forsaken"],
+      hint: "Forever broken he walk's a life of solitude",
     },
     19: {
       answer: ["computer", "tablet", "smartphone", "laptop"],
@@ -84,4 +84,3 @@ export const SOLUTIONS = {
       hint: "People who excel in their fields, true 'talent' ambassadors.",
     },
   };
-  
