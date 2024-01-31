@@ -8,7 +8,7 @@ export const SOLUTIONS = {
       hint: "Garden fare or wandering trader from Stardew Valley.",
     },
     2: {
-      answer: ["Hermione", "Ronald", "Fred", "Minerva"],
+      answer: ["hermione", "ronald", "fred", "minerva"],
       hint: "Your a wizard Harry!",
     },
     3: {
