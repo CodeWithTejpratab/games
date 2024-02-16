@@ -1,4 +1,4 @@
-<img src="cat.png" width="128"/>
+<img src="cat.png" width="300"/>
 
 # Save The Cookie Monster
 
