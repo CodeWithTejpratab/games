@@ -11,6 +11,6 @@ This project was created with:
 - HTML/CSS.
 
 # Features
-#1 Solve word puzzles daily.
-#2 Experience an engaging storyline inspired by Whiskey the cat.
-#3 Enjoy colorful and intuitive user interface designed with HTML/CSS and React.
+* Solve word puzzles daily.
+* Experience an engaging storyline inspired by Whiskey the cat.
+* Enjoy colorful and intuitive user interface designed with HTML/CSS and React.
