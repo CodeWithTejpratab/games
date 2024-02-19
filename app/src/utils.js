@@ -37,7 +37,7 @@ export const getGameNumber = () => {
 
   // Calculate the game number
   return Math.floor(
-    (userCurrentDateTime.getTime() - new Date("2024-02-20").getTime()) /
+    (userCurrentDateTime.getTime() - new Date("2024-02-19").getTime()) /
       (1000 * 60 * 60 * 24)
   );
 };
