@@ -1,0 +1,36 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name
+  pull_request:
+    branches:
+      - main  # Change this to your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # Change this to your desired Node.js version
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
+
+    - name: Test project
+      run: npm test  # Change this to your test command if different
+
+    - name: Deploy to hosting platform
+      # Add deployment steps here (e.g., deploy to GitHub Pages, Netlify, Vercel, etc.)
+      # Example:
+      run: npm run deploy  # Change this to your deployment command if necessary
