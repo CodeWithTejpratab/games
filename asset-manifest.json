@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/games/static/css/main.0138475e.css",
-    "main.js": "/games/static/js/main.4bd5ff25.js",
-    "static/js/787.0f8d78ff.chunk.js": "/games/static/js/787.0f8d78ff.chunk.js",
-    "static/media/cat.jpg": "/games/static/media/cat.7160c6dbcd2008bb7c6c.jpg",
-    "static/media/jailcat.jpg": "/games/static/media/jailcat.0704c4d9cf4c7fed3280.jpg",
-    "static/media/SuperFunky.ttf": "/games/static/media/SuperFunky.9367084bb0ab79d1947f.ttf",
+    "main.css": "/games/static/css/main.236169a2.chunk.css",
+    "main.js": "/games/static/js/main.78767b45.chunk.js",
+    "main.js.map": "/games/static/js/main.78767b45.chunk.js.map",
+    "runtime~main.js": "/games/static/js/runtime~main.761cdb20.js",
+    "runtime~main.js.map": "/games/static/js/runtime~main.761cdb20.js.map",
+    "static/js/2.1e20ddc5.chunk.js": "/games/static/js/2.1e20ddc5.chunk.js",
+    "static/js/2.1e20ddc5.chunk.js.map": "/games/static/js/2.1e20ddc5.chunk.js.map",
+    "static/js/3.8ba39429.chunk.js": "/games/static/js/3.8ba39429.chunk.js",
+    "static/js/3.8ba39429.chunk.js.map": "/games/static/js/3.8ba39429.chunk.js.map",
     "index.html": "/games/index.html",
-    "main.0138475e.css.map": "/games/static/css/main.0138475e.css.map",
-    "main.4bd5ff25.js.map": "/games/static/js/main.4bd5ff25.js.map",
-    "787.0f8d78ff.chunk.js.map": "/games/static/js/787.0f8d78ff.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.0138475e.css",
-    "static/js/main.4bd5ff25.js"
-  ]
+    "precache-manifest.18f2f33451885f9160a2df50c4789d53.js": "/games/precache-manifest.18f2f33451885f9160a2df50c4789d53.js",
+    "service-worker.js": "/games/service-worker.js",
+    "static/css/main.236169a2.chunk.css.map": "/games/static/css/main.236169a2.chunk.css.map",
+    "static/media/SuperFunky.ttf": "/games/static/media/SuperFunky.c1c6a15b.ttf",
+    "static/media/cat.jpg": "/games/static/media/cat.491adb26.jpg",
+    "static/media/jailcat.jpg": "/games/static/media/jailcat.1651fb58.jpg"
+  }
 }
