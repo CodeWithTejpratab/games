@@ -44,6 +44,7 @@ export const getGameNumber = () => {
 };
 */
 
+/*
 export const getGameNumber = () => {
   const fs = require('fs');
   // Get the current date
@@ -83,6 +84,39 @@ export const getGameNumber = () => {
       (currentDate.getTime() - new Date(date).getTime()) /
       (1000 * 60 * 60 * 24)
   );
+};
+*/
+
+export const getGameNumber = () => {
+  // Get the current date
+  const currentDate = new Date();
+  let date = "";
+
+  // Extract the date components
+  const year = currentDate.getFullYear(); // Get the year (YYYY)
+  const month = currentDate.getMonth() + 1; // Get the month (0-11, add 1 to get 1-12)
+  const day = currentDate.getDate(); // Get the day of the month (1-31)
+
+  // Format the date as desired (e.g., YYYY-MM-DD)
+  const formattedDate = year + "-" + month.toString().padStart(2, '0') + "-" + day.toString().padStart(2, '0');
+
+  // Key for storing date in localStorage
+  const storageKey = 'gameDate';
+
+  // Read the content of the date from localStorage
+  const storedDate = localStorage.getItem(storageKey);
+
+  // Check if stored date exists and if it's older than 20 days
+  if (storedDate && Math.floor((currentDate.getTime() - new Date(storedDate).getTime()) / (1000 * 60 * 60 * 24)) >= 20) {
+    // Write the formatted date to localStorage
+    localStorage.setItem(storageKey, formattedDate);
+    date = formattedDate;
+  } else {
+    date = storedDate || formattedDate; // Use stored date if available, otherwise use current date
+  }
+
+  // Calculate the game number
+  return Math.floor((currentDate.getTime() - new Date(date).getTime()) / (1000 * 60 * 60 * 24));
 };
 
 export const createInitialGrid = (words, lettersPerRow = 6) => {
