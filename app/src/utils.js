@@ -102,12 +102,17 @@ export const getGameNumber = () => {
 
   // Key for storing date in localStorage
   const storageKey = 'gameDate';
-
+  
   // Read the content of the date from localStorage
-  const storedDate = localStorage.getItem(storageKey);
+  var storedDate = localStorage.getItem(storageKey);
 
+  if(!storedDate){
+    localStorage.setItem(storageKey, "2024-03-31");
+    storedDate = localStorage.getItem(storageKey);
+  }
+  
   // Check if stored date exists and if it's older than 20 days
-  if (storedDate && Math.floor((currentDate.getTime() - new Date(storedDate).getTime()) / (1000 * 60 * 60 * 24)) >= 20) {
+  if (storedDate && Math.floor((currentDate.getTime() - new Date(storedDate).getTime()) / (1000 * 60 * 60 * 24)) > 20) {
     // Write the formatted date to localStorage
     localStorage.setItem(storageKey, formattedDate);
     date = formattedDate;
