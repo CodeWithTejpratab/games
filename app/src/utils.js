@@ -24,6 +24,7 @@ export const findLargestWordLength = (words) => {
   return largestLength;
 };
 
+/*
 export const getGameNumber = () => {
   // Get the user's time zone
   let userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -38,6 +39,48 @@ export const getGameNumber = () => {
   // Calculate the game number
   return Math.floor(
     (userCurrentDateTime.getTime() - new Date("2024-03-31").getTime()) /
+      (1000 * 60 * 60 * 24)
+  );
+};
+*/
+
+export const getGameNumber = () => {
+  const fs = require('fs');
+  // Get the current date
+  const currentDate = new Date();
+  let date = "";
+
+  // Extract the date components
+  const year = currentDate.getFullYear(); // Get the year (YYYY)
+  const month = currentDate.getMonth() + 1; // Get the month (0-11, add 1 to get 1-12)
+  const day = currentDate.getDate(); // Get the day of the month (1-31)
+
+  // Format the date as desired (e.g., YYYY-MM-DD)
+  const formattedDate = year + "-" + month.toString().padStart(2, '0') + "-" + day.toString().padStart(2, '0');
+
+  // Path to the file
+  const filePath = './date.txt';
+
+  // Read the content of the file
+  try {
+      const data = fs.readFileSync(filePath, 'utf8');
+      if (Math.floor(
+          (currentDate.getTime() - new Date(data).getTime()) /
+          (1000 * 60 * 60 * 24)) >= 20) {
+          // Write the formatted date to the file
+          fs.writeFileSync(filePath, formattedDate, 'utf8');
+          date = formattedDate;
+      } else {
+          date = data;
+      }
+  } catch (err) {
+      console.error("Error reading file:", err);
+      date = formattedDate;
+  }
+
+  // Calculate the game number
+  return Math.floor(
+      (currentDate.getTime() - new Date(date).getTime()) /
       (1000 * 60 * 60 * 24)
   );
 };
