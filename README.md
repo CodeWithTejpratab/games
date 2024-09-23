@@ -15,3 +15,9 @@ This project was created with:
 2. Experience an engaging storyline inspired by Whiskey the cat.
 3. Enjoy colorful and intuitive user interface designed with HTML/CSS and React.
 
+<ul>
+  <li>
+     <input type="checkbox" checked>
+     Foo
+  </li>
+</ul>
